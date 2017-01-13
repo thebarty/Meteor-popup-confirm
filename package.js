@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'matdutour:popup-confirm',
-  version: '0.2.1',
-  summary: 'A clean and easy to use confirmation popup',
-  git: 'https://github.com/mathieudutour/Meteor-popup-confirm.git',
+  name: 'thebarty:popup-confirm-bs3',
+  version: '0.2.2',
+  summary: 'A clean and easy to use confirmation popup. Forked from `matdutour:popup-confirm` and made bootstrap3 compatible.',
+  git: 'https://github.com/thebarty/Meteor-popup-confirm',
   documentation: 'README.md'
 });
 
@@ -11,7 +11,6 @@ Package.onUse(function(api) {
   api.use('jquery');
   api.use('templating');
   api.addFiles('lib/popup-confirm.html', 'client');
-  api.addFiles('lib/popup-confirm.css', 'client');
   api.export('Confirmation', 'client');
   api.addFiles('lib/popup-confirm.js', 'client');
 });

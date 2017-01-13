@@ -1,15 +1,18 @@
-A clean and easy to use confirmation popup
+A clean and easy to use confirmation popup. Forked from `matdutour:popup-confirm` and made bootstrap3 compatible.
+
+NOTE: make sure that you have a bootstrap3-library installed. This package does NOT include bootstrap3, but simply uses its styles.
 
 Installation
 ============
 
-    $ meteor add matdutour:popup-confirm
+    $ meteor add thebarty:popup-confirm-bs3
+
 
 Usage
 =====
 
 
-	new Confirmation({
+  new Confirmation({
       message: "Are you sure ?",
       title: "Confirmation",
       cancelText: "Cancel",

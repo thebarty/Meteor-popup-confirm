@@ -1,11 +1,19 @@
 <template name='popup_confirm'>
-  <div class="pc-dimmer"></div>
-  <div class="pc-container pc-enter" id="{{_id}}">
-    <div>
-      <h3>{{title}}</h3>
-      <div>{{{message}}}</div>
-      <button class="pc-button pc-button-cancel" id="pc-cancel"><span>{{cancelText}}</span></button>
-      <button class="pc-button {{#if success}}pc-button-success{{else}}pc-button-error{{/if}}" id="pc-ok"><span>{{okText}}</span></button>
+  <div class="modal fade pc-container pc-enter" id="{{_id}}">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button id="pc-button-close" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title">{{title}}</h3>
+        </div>
+        <div class="modal-body">
+          {{{message}}}
+        </div>
+        <div class="modal-footer">
+          <button class="pc-button pc-button-cancel btn btn-default" id="pc-cancel" data-dismiss="modal">{{cancelText}}</button>
+          <button class="pc-button btn {{#if success}}pc-button-success btn-primary{{else}}pc-button-error btn-danger{{/if}}" id="pc-ok">{{okText}}</button>
+        </div>
+      </div>
     </div>
   </div>
 </template>
