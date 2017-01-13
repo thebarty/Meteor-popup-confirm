@@ -1,7 +1,7 @@
 Package.describe({
-  name: 'thebarty:popup-confirm-bs3',
+  name: 'thebarty:modal-prompt-bootstrap',
   version: '0.2.2',
-  summary: 'A clean and easy to use confirmation popup. Forked from `matdutour:popup-confirm` and made bootstrap3 compatible.',
+  summary: 'A clean and easy to use confirmation popup - based on bootstrap3 modals.',
   git: 'https://github.com/thebarty/Meteor-popup-confirm',
   documentation: 'README.md'
 });
